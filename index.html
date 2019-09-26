@@ -9,9 +9,44 @@
 </head>
 <body>
     <div class="container">
+
+                
+                
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <ul>
+                    <li>
+                            <h3>Snippet99</h3>
+                            <p>Wordpress Blog and CV template.</p>
+                    </li>
+                    <li>
+                            <h3>Vasakronan AB</h3>
+                            <p>Real state app using Mapbox.</p>
+                    </li>
+                    <li>
+                            <h3>PHP Ninja App</h3>
+                            <p>Instagram type application.</p>
+                    </li>
+                    <li>
+                            <h3>K-Mit Website</h3>
+                            <p>A website using React redux.</p>
+                    </li>
+                    <li>
+                            <h3>Notebook</h3>
+                            <p>A school project using reactjs css3.</p>
+                    </li>
+                </ul>
+                  </div>
+                
+                </div>
+                
             <div class="cv">
                     <div class="cvDiv cvheading"><h1><span>Curriculum <br> Vitae</span></h1></div>
-                    <div class="cvDiv cvMedia">Github / Twitter / Youtube / LinkedIn</div>
+                    <div class="cvDiv cvMedia">Github / Twitter / Youtube / LinkedIn </div>
             </div>
             <div class="cv cv__margin">
                         <div class="cvDiv">  
@@ -43,7 +78,7 @@
                                 </div>
                             <div class="cvDiv">
                                         <div class="cvHeadingBg"><h2>Projects</h2></div>
-                                    <h3><a href="">See Details>></a></h3>
+                                    <h3><button id="Btn">See Details>></button></h3>
                             </div>
                         </div>
                         <div class="cv">
@@ -53,20 +88,46 @@
                                                 <div class="cv_skill cv_skill--css"><span class="cv__percentage">CSS: 100%</span></div>
                                                 <div class="cv_skill cv_skill--js"><span class="cv__percentage">JS {89%}</span></div>
                                                 <div class="cv_skill cv_skill--php"><span class="cv__percentage">PHP "77%"</span></div>
-                                                <div class="cv_skill cv_skill--html"><span class="cv__percentage">HTML <95%></95></span></div>
+                                                <div class="cv_skill cv_skill--html"><span class="cv__percentage">HTML ?95%?</span></div>
+                                                <div class="cv_skill cv_skill--wp"><span class="cv__percentage">WP - 70%</span></div>
                                         </div>
                                        
                                 </div>
                         </div>
                         <div class="cv">
-                                <div class="cvDiv">
-                                         <p>All Rights reserved by @ snippet99</p>                  
-                                </div> 
+                                <footer class="cvDiv">
+                                         <p >All Rights reserved by @ snippet99</p>                  
+                                </footer> 
                         </div>
 
 
     </div>
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
 
+// Get the button that opens the modal
+var btn = document.getElementById("Btn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}</script>
 
 </body>
 </html>
