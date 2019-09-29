@@ -21,6 +21,7 @@ body{
   margin: 0;
   padding:0;
 }
+ 
 .container{
     width: 75%;
     margin: 0 auto;
@@ -56,6 +57,24 @@ body{
   background: url("/images/headingbg.png") no-repeat center;
   background-size: 200px 80px;
 }
+.experienceImg1{
+  width: 70px;
+}
+.experienceImg2{
+  width: 100px;
+}
+.experienceImg3{
+  width: 120px;
+}
+.educationImg1{
+  width: 80px;
+}
+.educationImg2{
+  width: 75px;
+}
+.educationImg3{
+  width: 120px;
+}
 /*.cvheading h1:before{
     background:linear-gradient(45deg,#fc5c7d,#fff,#fc5c7d);
 }*/
@@ -78,10 +97,23 @@ body{
     filter: alpha(opacity=50);
     opacity: 0.9;
   }
+ .cvMedia img{
+  width: 100px;
+ } 
+a { 
+  color:#000000
+ }
+.cvSocialMedia a:link{
+  text-decoration: none;
+  color: #000000;
+}
 
+.cvSocialMedia a:hover{
+  color: rgba(139, 13, 13, 1);
+}
 
                                 
- #stripes10 {
+ #stripes {
     background-image: repeating-linear-gradient(145deg, #000000, #ececec 1px, #ececec 14px, #000000 15px);
  }
 
@@ -107,7 +139,7 @@ body{
     animation-name: broked;
     animation-delay: 1s;
     animation-duration: 2s;
-    animation-iteration-count:2;
+    animation-iteration-count:6;
     animation-direction: alternate;
     transform-origin: 100% -50%;
     animation-timing-function: ease-in-out;
@@ -190,6 +222,9 @@ body{
 }
  .cv__margin{
      margin-top: 100px;
+ }
+ .cvHeadingIntro{
+
  }
  footer{
      font-size: 10px;
@@ -289,7 +324,6 @@ body{
   background-color: rgba(139, 13, 13, 1);
   margin: auto;
   padding: 20px;
-  border: 1px solid #888;
   width: 80%;
   color: #ffffff;
 }
@@ -299,8 +333,9 @@ body{
 }
 
 /* The Close Button */
-.close {
+.close img{
   float: right;
+  width: 20px;
 }
 
 .close:hover,
@@ -323,12 +358,12 @@ body{
 
 }
 .headerSection > h1{
-  background: #cecece;
+  background: #ececec;
   display: inline-block;
   font-size: 50px;
   width: 50px;
   height: 50px;
-  padding-top: 8px;
+  padding-top: 50px;
   color: rgba(139, 13, 13, 1);
 }
 .headerSection p{
@@ -350,3 +385,186 @@ body{
  footer, .pagination{
    text-align: center;
  }
+
+ .cvBtn{
+   width: 75%;
+   height: 40px;
+   position: fixed;
+   background: #ececec;
+   font-size: 30px;
+ }
+
+ .cvBtn a{
+   color:  rgba(139, 13, 13, 1);
+   -webkit-box-shadow: 0 8px 6px -6px black;
+   -moz-box-shadow: 0 8px 6px -6px black;
+        box-shadow: 0 8px 6px -6px black;
+        border-radius: 20%;
+ }
+
+.cvBtn a:link {
+  color:  rgba(139, 13, 13, 1);
+  text-decoration: none;
+}
+.cvBtn a:hover {
+  color: #000000;
+}
+
+
+/* Media Quries */
+ 
+@media only screen and (max-width: 1024px) { 
+.container{
+width: 80%
+}
+.cvMedia img{
+  width: 100px;
+  height: 100px;
+}
+
+.cvDiv--foto1{
+  width: 200px;
+}
+
+.experienceImg1{
+  width: 80px;
+  height: 80px;
+}
+.experienceImg2{
+  width: 100px;
+  height: 100px;
+}
+.experienceImg3{
+  width: 80px;
+  height: 80px;
+}
+.educationImg1{
+  width: 80px;
+  height: 80px;
+}
+.educationImg2{
+  width: 70px;
+  height: 70px;
+}
+.educationImg3{
+  width: 80px;
+  height: 30px;
+}
+
+
+/* modal area */
+
+.modal-content {
+  padding: 10px;
+  width: 60%;
+  height: 400px;
+
+}
+.modal-content {
+  font-size: 14px;
+}
+.modal-content a{
+  font-size: 16px;
+}
+.close img{
+  width: 20px;
+  height: 20px;
+}
+
+  /*Blog CSS*/
+  .headerSection{
+    width: 768px;
+    height:330px;
+  }
+  .cvBtn{
+   width: 768px;
+  }
+
+  .mainSection{
+  margin-right: 20px;
+  margin-left: 20px;
+  }
+
+  img { 
+    height: 200px;
+    width: 400px;
+   }
+  
+   .img img{
+    height: 100%;
+    width: 100%;
+   }
+
+}
+
+@media only screen and (max-width: 768px) { 
+  .contentSection {
+    width: 100%;
+}
+  .headerSection{
+    width: 768px;
+    height:330px;
+  }
+  .cvBtn{
+   width: 768px;
+  }
+
+  .mainSection{
+  margin-right: 20px;
+  margin-left: 20px;
+  }
+
+  img { 
+    height: 200px;
+    width: 400px;
+   }
+  
+   .img img{
+    height: 100%;
+    width: 100%;
+   }
+
+}
+
+@media only screen and (max-width: 425px) { 
+.cv{
+    flex-direction: column;
+}
+.cvHeadingIntro{
+ margin-top:30px;
+}
+.cv__margin{
+  margin-top: 50px;
+}
+#stripes, .cvDiv--name{
+  margin-left: auto;
+  margin-right: auto;
+}
+  
+  /* Blog CSS */
+  .contentSection {
+ width: 425px !important;
+}
+  .headerSection{
+    width: 425px;
+    height:330px;
+  }
+  .cvBtn{
+   width: 425px;
+  }
+
+  .mainSection{
+  margin-right: 20px;
+  margin-left: 20px;
+  }
+
+  img { 
+    height: 200px;
+    width: 100px;
+   }
+  
+   .img img{
+    
+   }
+
+} 
